@@ -44,7 +44,7 @@ async_diloco_pytorch/
 ├── workers/
 │ └── async_worker.py # Async local training worker (threaded)
 └── README.md
-```bash
+```
 
 ---
 
@@ -52,13 +52,13 @@ async_diloco_pytorch/
 
 ```bash
 git clone https://github.com/rafey1104/async_diloco_pytorch.git
-```bash
+```
 
 ```bash
 conda create -n async-diloco-env python=3.10 -y
 conda activate async-diloco-env
 pip install torch torchvision matplotlib
-```bash
+```
 
 ---
 
