@@ -45,15 +45,20 @@ async_diloco_pytorch/
 │ └── async_worker.py # Async local training worker (threaded)
 └── README.md
 ```bash
+
 ---
 
 ## ⚙️ Installation
 
 ```bash
+git clone https://github.com/rafey1104/async_diloco_pytorch.git
+```bash
+
+```bash
 conda create -n async-diloco-env python=3.10 -y
 conda activate async-diloco-env
 pip install torch torchvision matplotlib
-```
+```bash
 
 ---
 
@@ -61,7 +66,7 @@ pip install torch torchvision matplotlib
 
 ```bash
 python main.py
-```
+```bash
 
 > The default configuration runs for **30 seconds** with 4 workers.
 
