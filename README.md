@@ -66,7 +66,7 @@ pip install torch torchvision matplotlib
 
 ```bash
 python main.py
-```bash
+```
 
 > The default configuration runs for **30 seconds** with 4 workers.
 
