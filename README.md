@@ -4,7 +4,7 @@ This project is a research-oriented PyTorch implementation of the paper:
 
 > **"Momentum Look-Ahead for Asynchronous Distributed Low-Communication Training"**  
 > *Published at ICLR 2025*  
-> [arXiv Link](https://arxiv.org/abs/2401.09135)
+> [arXiv Link](https://openreview.net/pdf?id=4O8nzTkHPI)
 
 We simulate asynchronous training with 4 local workers and a central parameter server using LeNet on the CIFAR-10 dataset.
 
@@ -24,12 +24,7 @@ We simulate asynchronous training with 4 local workers and a central parameter s
 Instead of waiting for all workers to sync, each one sends updates (∆θ) asynchronously.  
 The server uses:
 
-\\[
-\\begin{aligned}
-m_{t+1} &= \\gamma m_t + (1 - \\gamma)\\Delta\\theta_t \\\\
-\\theta_{t+1} &= \\theta_t - \\eta (\\gamma m_{t+1} + \\Delta\\theta_t)
-\\end{aligned}
-\\]
+![Training Screenshot](assets/screenshot.png)
 
 This approach improves convergence in heterogeneous hardware setups.
 
@@ -37,6 +32,7 @@ This approach improves convergence in heterogeneous hardware setups.
 
 ## 📁 Project Structure
 
+```bash
 async_diloco_pytorch/
 ├── main.py # Launches async training and evaluation
 ├── models/
@@ -48,7 +44,7 @@ async_diloco_pytorch/
 ├── workers/
 │ └── async_worker.py # Async local training worker (threaded)
 └── README.md
-
+```bash
 ---
 
 ## ⚙️ Installation
