@@ -99,21 +99,6 @@ python main.py
 
 ---
 
-## 📈 TODOs and Extensions
-
-- [ ] Add dynamic local update (DyLU)
-- [ ] Compare with Async-SGD and Sync-DiLoCo
-- [ ] Add TensorBoard logging
-- [ ] Extend to multiprocessing or RPC-based distributed training
-
----
-
-## 📜 License
-
-MIT License – open for research and educational use.
-
----
-
 ## 🙏 Acknowledgments
 
 Based on the paper by Ajanthan et al., published at ICLR 2025. Inspired by the official [DeepMind async DiLoCo repo](https://github.com/google-deepmind/asyncdiloco).
