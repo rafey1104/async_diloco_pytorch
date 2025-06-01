@@ -72,6 +72,12 @@ python main.py
 
 ---
 
+## 🎥 Demo Video
+
+📺 [Click here to watch the execution demo on Google Drive](https://drive.google.com/file/d/1bMCOIxy83A8V8OxGwfAjNNutRc3WpI2O/view?usp=sharing)
+
+---
+
 ## 🔍 Example Output
 
 ```bash
