@@ -37,19 +37,17 @@ This approach improves convergence in heterogeneous hardware setups.
 
 ## 📁 Project Structure
 
-\`\`\`
 async_diloco_pytorch/
-├── main.py                     # Launches async training and evaluation
+├── main.py # Launches async training and evaluation
 ├── models/
-│   └── lenet.py                # LeNet-5 CNN model for CIFAR-10
+│ └── lenet.py # LeNet-5 CNN model for CIFAR-10
 ├── datasets/
-│   └── cifar_loader.py         # CIFAR-10 DataLoader
+│ └── cifar_loader.py # CIFAR-10 DataLoader
 ├── server/
-│   └── async_server.py         # Momentum Look-Ahead server logic
+│ └── async_server.py # Momentum Look-Ahead server logic
 ├── workers/
-│   └── async_worker.py         # Async local training worker (threaded)
+│ └── async_worker.py # Async local training worker (threaded)
 └── README.md
-\`\`\`
 
 ---
 
@@ -65,9 +63,9 @@ pip install torch torchvision matplotlib
 
 ## 🚀 Usage
 
-\`\`\`bash
+\`bash
 python main.py
-\`\`\`
+\`
 
 > The default configuration runs for **30 seconds** with 4 workers.
 
@@ -120,9 +118,3 @@ MIT License – open for research and educational use.
 
 Based on the paper by Ajanthan et al., published at ICLR 2025. Inspired by the official [DeepMind async DiLoCo repo](https://github.com/google-deepmind/asyncdiloco).
 """
-
-with open("/mnt/data/README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-"/mnt/data/README.md"
-
