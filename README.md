@@ -53,19 +53,19 @@ async_diloco_pytorch/
 
 ## ⚙️ Installation
 
-\`\`\`bash
+```bash
 conda create -n async-diloco-env python=3.10 -y
 conda activate async-diloco-env
 pip install torch torchvision matplotlib
-\`\`\`
+```
 
 ---
 
 ## 🚀 Usage
 
-\`bash
+```bash
 python main.py
-\`
+```
 
 > The default configuration runs for **30 seconds** with 4 workers.
 
@@ -73,7 +73,7 @@ python main.py
 
 ## 🔍 Example Output
 
-\`\`\`
+```bash
 [Server] Running...
 [Worker 0] Starting.
 [Worker 1] Starting.
@@ -83,7 +83,7 @@ python main.py
 [Main] Running training for 30 seconds...
 [Server] Shutting down.
 [Eval] Accuracy: 31.59%
-\`\`\`
+```
 
 ---
 
